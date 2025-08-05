@@ -27,6 +27,7 @@ burgerNav.style.flexDirection = 'column'
 burgerNav.style.rowGap = '20px'
 burgerNav.style.alignItems = 'center'
 burgerNav.style.width = '230px'
+burgerNav.style.zIndex = '-1'
 
 listItems.style.listStyle = 'none'
 listItems.style.display = 'flex'
@@ -59,6 +60,7 @@ burgerIcon.addEventListener('click', () => {
     burgerNav.style.display = 'flex'
     closeIcon.style.display = 'inline'
     burgerIcon.style.display = 'none'
+    burgerNav.style.animation = 'slideDown 1s'
 })
 
 closeIcon.addEventListener('click', () => {
